@@ -1,0 +1,32 @@
+body {
+    margin:10; 
+    padding-top:3%;
+    padding-right:10%;
+    padding-left:10%;
+    padding-bottom:7%;
+}
+
+h1 {font-family: 'Arial Black';font-size:300%;}
+h2 {font-family: Arial, Helvetica, sans-serif; font-style: italic; text-align: right;}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+p {font-family: 'Courier New', Courier, monospace;}
+
+#image_box{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-style: dashed;
+    padding: 2%;
+}
+
+#list{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left:15%;
+    padding-right:15%;
+}
