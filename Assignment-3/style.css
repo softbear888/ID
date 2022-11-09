@@ -1,5 +1,5 @@
 body {
-    margin:10; 
+    margin:10;
     padding-top:3%;
     padding-right:10%;
     padding-left:10%;
@@ -29,4 +29,13 @@ p {font-family: 'Courier New', Courier, monospace;}
     font-family: 'Courier New', Courier, monospace;
     padding-left:15%;
     padding-right:15%;
+}
+
+.grace-sketches {
+  display: inline-block;
+}
+
+.wireframe-box {
+  width: 45%;
+  padding: 15px;
 }
