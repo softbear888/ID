@@ -1,165 +1,326 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Note that all contents bounded with ** are placeholders -->
-<!-- header -->
-<h1>Iterative Design</h1>
-<h2>An exploration into iteration and user testing.</h2>
+  <!-- Note that all contents bounded with ** are placeholders -->
+  <!-- header -->
+  <h1>Iterative Design</h1>
+  <h2>An exploration into iteration and user testing.</h2>
 
-<!-- content -->
-<p>The process of creating a satisfactory design is often a complex one. At a high level, designers create sketches, lofi wireframes, hifi prototypes, and at last a final product. Laid out this way, the process doesn’t seem so bad. But with each version comes multiple rounds - iterations - of work. Changes both big and small are fueled by feedback from the design team itself and outside users. It is this iteration that is core to design, driving it toward a product that is well-tested, well-designed, and well-received. In this project, we sought to familiarize ourselves with iterative design by creating an interactive mockup based on an active startup idea.</p>
-<p>Ole is a shopping service that allows users to order online without worrying about whether clothes will fit or look good on them. Users input their zip code and view clothing items from various stores in the area. Thus, the clothes are not limited by brand or store. A personal shopper picks up the items and delivers them at a specific time (determined by the user at checkout). While the driver waits, the user can try on each clothing item and select which ones to return or keep. The items they wish to return are given back to the driver, who completes the return process on the user’s behalf.</p>
-<p>Because of the delivery-based nature of the service, we decided to design for a desktop view. We imagine that most users will be on their computers when in the comfort of their own homes (or generally indoors), and thus would access Ole through those devices.</p>
+  <!-- content -->
+  <p>The process of creating a satisfactory design is often a complex one. At a high level, designers create sketches,
+    lofi wireframes, hifi prototypes, and at last a final product. Laid out this way, the process doesn’t seem so bad.
+    But with each version comes multiple rounds - iterations - of work. Changes both big and small are fueled by
+    feedback from the design team itself and outside users. It is this iteration that is core to design, driving it
+    toward a product that is well-tested, well-designed, and well-received. In this project, we sought to familiarize
+    ourselves with iterative design by creating an interactive mockup based on an active startup idea.</p>
+  <p>Ole is a shopping service that allows users to order online without worrying about whether clothes will fit or look
+    good on them. Users input their zip code and view clothing items from various stores in the area. Thus, the clothes
+    are not limited by brand or store. A personal shopper picks up the items and delivers them at a specific time
+    (determined by the user at checkout). While the driver waits, the user can try on each clothing item and select
+    which ones to return or keep. The items they wish to return are given back to the driver, who completes the return
+    process on the user’s behalf.</p>
+  <p>Because of the delivery-based nature of the service, we decided to design for a desktop view. We imagine that most
+    users will be on their computers when in the comfort of their own homes (or generally indoors), and thus would
+    access Ole through those devices.</p>
 
-<!-- part 1 -->
-<h3>Part I - Sketching & Wireframing</h3>
-<h4>Sketches</h4>
+  <!-- part 1 -->
+  <h3>Part I - Sketching & Wireframing</h3>
+  <h4>Sketches</h4>
 
-<!-- sample style: a group of 4 images -->
-<div id = "image_box">
-    <div class = "grace-sketches">
-      <p><b>Set #1:</b> Left: Sketches showing concepts for core pages: Home, Shopping, Location/Time Selection, and Cart. The Inspiration page was something we thought might be helpful for users: a way to view pre-existing outfits and gain inspiration for one's own style.</p>
+  <!-- sample style: a group of 4 images -->
+  <div id="image_box">
+    <div class="grace-sketches">
+      <p><b>Set #1:</b> Left: Sketches showing concepts for core pages: Home, Shopping, Location/Time Selection, and
+        Cart. The Inspiration page was something we thought might be helpful for users: a way to view pre-existing
+        outfits and gain inspiration for one's own style.</p>
       <p>Right: Additional sketches for the Inspiration page, which we considered a more unique page.</p>
-      <img src = "source/Grace-Sketches.JPG" alt = "image' - front" width = 50%>
-      <img src = "source/Grace-Sketches-2.JPG" alt = "image' - back" width = 49%>
-    </div>
-</div>
-<div id = "image_box">
-  <div class = "katherine-sketches">
-    <p><b>Set #2:</b> Sketches show the general layout of the Home page, Shopping page, and Cart page.</p>
-    <img src = "source/Katherine-Sketches-1.png" alt = "image' - front" width = 50%>
-    <img src = "source/Katherine-Sketches-2.png" alt = "image' - front" width = 25%>
-  </div>
-</div>
-<div id = "image_box">
-    <p><b>Set #3:</b> Sketches of each page & user's thoughts. Users of Ole typically want to shop new clothes but finds in-person shopping tiring.</p>
-    <img src = "source/Eileen_sketch.jpg" alt = "image' - front" width = 100%>
-</div>
-
-<h4>Wireframes</h4>
-<!-- 12 screens of lofi wireframes. Please replace the images! -->
-<div id = "image_box">
-    <div class = "wireframe-box">
-      <img src = "source/Home.JPG" alt = "image' - front" width = 100%>
-      <p>A homepage consisting of a welcome message and a brief description of the service. Users can enter their zip code to see which stores/clothing items are available nearby. A map at the bottom of the page updates when the user enters a valid zip code.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Cart.JPG" alt = "image' - back" width = 100%>
-      <p>A page displaying all the items a user has added to their cart. Basic information about each item, as well as the total price, is shown to the right.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Checkout.JPG" alt = "image' - front" width = 100%>
-      <p>A page that allows users to input their information for the order. The Order Summary box still appears to remind users of what is generally in their order. They can return to the Cart page if they need more details, or would like to edit their order. In a fully built application, there would be a very similar page for billing information.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Return.JPG" alt = "image' - back" width = 100%>
-      <p>This is where users can choose which items to keep and which items to return. It is very similar to the Cart page, but has checkboxes in lieu of the trash can icon. Checking the box associated with an item updates the Return Summary box.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Inspiration.JPG" alt = "image' - front" width = 100%>
-      <p>A Pinterest-style page that allows users to scroll through various outfits. If they find an outfit they like, they can click on it to view the items in the outfit and/or "heart" it. There is also a scrollable side section with suggested outfits based on the user's past likes.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Inspiration-2.JPG" alt = "image' - back" width = 100%>
-      <p>If a user clicks on an outfit, they are shown an enlarged image of the outfit, alongside the items in the outfit. We debated having an "Add to Cart" button next to each item, but decided against it. To add an item to cart, one would have to provide a size, color, and quantity, as well as be aware of the price. This was more information that we thought would be wise to display. We decided it would be best to separate this functionality and simply allow the user to navigate to an item's page by clicking on the image of it.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Order-Confirmation.JPG" alt = "image' - front" width = 100%>
-      <p>A simple order confirmation screen that lets the user know their purchase was successful. The button in the middle of the screen takes the user to the next step in the process: choosing which items to return and accept.</p>
-    </div>
-    <div class = "wireframe-box">
-      <img src = "source/Return-Confirmation.JPG" alt = "image' - back" width = 100%>
-      <p>A simple confirmation screen that lets the user know their transaction was successful. The button in the middle of the screen takes the user back to the Shop page in case they want to follow up on their order.</p>
+      <img src="source/Grace-Sketches.JPG" alt="image' - front" width=50%>
+      <img src="source/Grace-Sketches-2.JPG" alt="image' - back" width=49%>
     </div>
   </div>
-
-
-<!-- part 2 -->
-<h3>Part II - Mockups</h3>
-<h4>Preview of Prototype</h4>
-<div id = "image_box">
-    <img src = "source/prototype.png" alt = "image' - front" width = 100%>
+  <div id="image_box">
+    <div class="katherine-sketches">
+      <p><b>Set #2:</b> Sketches show the general layout of the Home page, Shopping page, and Cart page.</p>
+      <img src="source/Katherine-Sketches-1.png" alt="image' - front" width=50%>
+      <img src="source/Katherine-Sketches-2.png" alt="image' - front" width=25%>
+    </div>
   </div>
-<h4>Critique Feedback</h4>
-<div class = "list">
+  <div id="image_box">
+    <p><b>Set #3:</b> Sketches of each page & user's thoughts. Users of Ole typically want to shop new clothes but finds
+      in-person shopping tiring.</p>
+    <img src="source/Eileen_sketch.jpg" alt="image' - front" width=100%>
+  </div>
+
+  <h4>Wireframes</h4>
+  <!-- 12 screens of lofi wireframes. Please replace the images! -->
+  <div id="image_box">
+    <div class="wireframe-box">
+      <img src="source/Home.JPG" alt="image' - front" width=100%>
+      <p>A homepage consisting of a welcome message and a brief description of the service. Users can enter their zip
+        code to see which stores/clothing items are available nearby. A map at the bottom of the page updates when the
+        user enters a valid zip code.</p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Cart.JPG" alt="image' - back" width=100%>
+      <p>A page displaying all the items a user has added to their cart. Basic information about each item, as well as
+        the total price, is shown to the right.</p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Checkout.JPG" alt="image' - front" width=100%>
+      <p>A page that allows users to input their information for the order. The Order Summary box still appears to
+        remind users of what is generally in their order. They can return to the Cart page if they need more details, or
+        would like to edit their order. In a fully built application, there would be a very similar page for billing
+        information.</p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Return.JPG" alt="image' - back" width=100%>
+      <p>This is where users can choose which items to keep and which items to return. It is very similar to the Cart
+        page, but has checkboxes in lieu of the trash can icon. Checking the box associated with an item updates the
+        Return Summary box.</p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Inspiration.JPG" alt="image' - front" width=100%>
+      <p>A Pinterest-style page that allows users to scroll through various outfits. If they find an outfit they like,
+        they can click on it to view the items in the outfit and/or "heart" it. There is also a scrollable side section
+        with suggested outfits based on the user's past likes.</p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Inspiration-2.JPG" alt="image' - back" width=100%>
+      <p>If a user clicks on an outfit, they are shown an enlarged image of the outfit, alongside the items in the
+        outfit. We debated having an "Add to Cart" button next to each item, but decided against it. To add an item to
+        cart, one would have to provide a size, color, and quantity, as well as be aware of the price. This was more
+        information that we thought would be wise to display. We decided it would be best to separate this functionality
+        and simply allow the user to navigate to an item's page by clicking on the image of it.</p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Order-Confirmation.JPG" alt="image' - front" width=100%>
+      <p>A simple order confirmation screen that lets the user know their purchase was successful. The button in the
+        middle of the screen takes the user to the next step in the process: choosing which items to return and accept.
+      </p>
+    </div>
+    <div class="wireframe-box">
+      <img src="source/Return-Confirmation.JPG" alt="image' - back" width=100%>
+      <p>A simple confirmation screen that lets the user know their transaction was successful. The button in the middle
+        of the screen takes the user back to the Shop page in case they want to follow up on their order.</p>
+    </div>
+  </div>
+
+
+  <!-- part 2 -->
+  <h3>Part II - Mockups</h3>
+  <h4>Preview of Prototype</h4>
+  <div id="image_box">
+    <img src="source/prototype.png" alt="image' - front" width=100%>
+  </div>
+  <h4>Critique Feedback</h4>
+  <div class="list">
     <ol>
-        <li>
-          <h5>Overall & Miscellaneous</h5>
-          <ul>
-            <li>Keep the same padding and margin across all pages. The buttons involved in the checkout process appear to be in slightly different positions on different pages.</li>
-            <li>Keep the rounding of boxes and images consistent.</li>
-            <li>The navigation bar is not fully functional on all pages. Fixing this will help emulate the actual experience of using the site more accurately.</li>
-            <li>The navigation bar in particular is a bit "jumpy" bewteen pages.</li>
-            <li>A wishlist page might be helpful as a way to store liked items.</li>
-          </ul>
-        </li>
-        <li>
-          <h5>Browsing (Shopping) Page</h5>
-          <ul>
-            <li>Placing filters at the top or left feels more intuitive.</li>
-          </ul>
-        </li>
-        <li>
-          <h5>Item Page</h5>
-          <ul>
-            <li>Add a description for each item.</li>
-          </ul>
-        </li>
-        <li>
-          <h5>Checkout Page</h5>
-          <ul>
-            <li>Users cannot go back to the previous page while checking out, which is commonly supported and expected functionality.</li>
-          </ul>
-        </li>
-        <li>
-          <h5>Shipping/Time Confirmation Page</h5>
-          <ul>
-            <li>Consider offering ranges instead of specific times.</li>
-            <li>Strengthen the hierarchy. At the moment, numerous elements appear to be at the same level of hierarchy when it seems like there should be an order.</li>
-          </ul>
-        </li>
-        <li>
-          <h5>Order Confirmation Page</h5>
-          <ul>
-            <li>Show a summary of the items that were ordered.</li>
-          </ul>
-        </li>
+      <li>
+        <h5>Overall & Miscellaneous</h5>
+        <ul>
+          <li>Keep the same padding and margin across all pages. The buttons involved in the checkout process appear to
+            be in slightly different positions on different pages.</li>
+          <li>Keep the rounding of boxes and images consistent.</li>
+          <li>The navigation bar is not fully functional on all pages. Fixing this will help emulate the actual
+            experience of using the site more accurately.</li>
+          <li>The navigation bar in particular is a bit "jumpy" bewteen pages.</li>
+          <li>A wishlist page might be helpful as a way to store liked items.</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Browsing (Shopping) Page</h5>
+        <ul>
+          <li>Placing filters at the top or left feels more intuitive.</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Item Page</h5>
+        <ul>
+          <li>Add a description for each item.</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Checkout Page</h5>
+        <ul>
+          <li>Users cannot go back to the previous page while checking out, which is commonly supported and expected
+            functionality.</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Shipping/Time Confirmation Page</h5>
+        <ul>
+          <li>Consider offering ranges instead of specific times.</li>
+          <li>Strengthen the hierarchy. At the moment, numerous elements appear to be at the same level of hierarchy
+            when it seems like there should be an order.</li>
+        </ul>
+      </li>
+      <li>
+        <h5>Order Confirmation Page</h5>
+        <ul>
+          <li>Show a summary of the items that were ordered.</li>
+        </ul>
+      </li>
     </ol>
   </div>
 
-  <div id = "image_box">
-    <p>Because we received numerous critiques about consistency, we sought to strengthen our style guide, which can be found below:</p>
-    <img width=100% src="source/Style-Guide.JPG"/>
+  <div id="image_box">
+    <p>Because we received numerous critiques about consistency, we sought to strengthen our style guide, which can be
+      found below:</p>
+    <img width=100% src="source/Style-Guide.JPG" />
   </div>
-    <div class = "list">
-      <p>Based on other feedback from critique, we improved our prototype in several ways:
-      <ul>
-        <li>Added Order Summary and Return Summary sections to provide more helpful information during the checkout process.
-        <li>Added the ability to go back to previous steps in the checkout process.
-        <li>Standardized rounding and positioning of elements. In particular, the Summary sections and checkout-related buttons are now all positioned in the same location.
-        <li>The navbar is functional on all pages.
-        <li>Added a wishlist page.
-        <li>Altered the location of the filters on the Browse page.
-        <li>Added a description for each clothing item.
-        <li>Redesigned the Shipping/Time Confirmation page so that it has a clearer, more intuitive hierarchy. In particular, text sizes are more clearly different. The page also offers time ranges instead of concrete times.
-      </ul>
+  <div class="list">
+    <p>Based on other feedback from critique, we improved our prototype in several ways:
+    <ul>
+      <li>Added Order Summary and Return Summary sections to provide more helpful information during the checkout
+        process.
+      <li>Added the ability to go back to previous steps in the checkout process.
+      <li>Standardized rounding and positioning of elements. In particular, the Summary sections and checkout-related
+        buttons are now all positioned in the same location.
+      <li>The navbar is functional on all pages.
+      <li>Added a wishlist page.
+      <li>Altered the location of the filters on the Browse page.
+      <li>Added a description for each clothing item.
+      <li>Redesigned the Shipping/Time Confirmation page so that it has a clearer, more intuitive hierarchy. In
+        particular, text sizes are more clearly different. The page also offers time ranges instead of concrete times.
+    </ul>
   </div>
-<h4>Revised Prototype</h4>
-<div id = "image_box">
-  <video width=100% controls>
-    <source src = "source/Demo.mp4" type="video/mp4">
+  <h4>Revised Prototype</h4>
+  <div id="image_box">
+    <video width=100% controls>
+      <source src="source/Demo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- part 3 -->
+  <h3>Part III - User Testing</h3>
+  <h4>User testing tasks &amp; results</h4>
+  <h5>Introduction</h5>
+  <p>Imagine you are a shopper looking to use Ole to pick out a blue sweater for
+    the winter months. You already added a couple of items to the cart earlier today and are just looking to add
+    one more item. Please think out loud as you navigate the prototype from page to page. Please note that the
+    screens are not interactive; this interface is an interactive mockup made on prototyping software. This
+    means, for example, the buttons with links will take you from webpage to webpage but will not alter the
+    contents of the page you are on (e.g. if you click &lsquo;like&rsquo; on a clothing item the heart will not
+    change color). We are seeking feedback on the interaction, navigation, hierarchy, and intended
+    functionality.</p>
+  <h5>Subtasks</h5>
+  <p>
+  <ol>
+    <li>Without leaving the homepage, what are your initial
+      impressions of the website? Explain your answer.</li>
+    <li>Browse the page and look for a blue sweater. Add it to your
+      cart. [5-point rating scale: Very difficult to Very easy]</li>
+    <li>From the cart page, access the &lsquo;inspiration&rsquo; page
+      from the navigation bar. Click the image with the blue sweater to explore potential outfits you can pair
+      the clothes with. Describe your thoughts on the interfaces as you go. Is it easy to navigate? How does
+      it compare to services like Pinterest? [5-point rating scale: Very difficult to Very easy]</li>
+    <li>Go back to the cart. Purchase all of the items that are in
+      the cart (the other ones are there from a previous visit you had to this page in this scenario). Go as
+      far as you can until you get to the confirmation page. Move on to the next task when you&#39;re done.
+      [5-point rating scale: Very difficult to Very easy]</li>
+    <li>After reaching the confirmation page, return the coat.
+      [5-point rating scale: Very difficult to Very easy]</li>
+    <li>What 3 words would you use to describe Ole&#39;s webpage?
+      Explain your answer.</li>
+    <li>Any overall comments about the interface? Were there any
+      places where you felt confused?</li>
+  </ol>
+  </p>
+  <h4> Videos of User Tests</h4>
+  <h5> Video #1</h5>
+  <video width="640" height="480" controls>
+    <source src="source/UserTesting-4336832C.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
-</div>
+  <h5> Video #2</h5>
+  <video width="640" height="480" controls>
+    <source src="source/UserTesting-4336832B.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h5> Video #3</h5>
+  <video width="640" height="480" controls>
+    <source src="source/UserTesting-4336832A.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h4>Summary of Results &mdash; Sorted By Theme</h4>
+  <h5>Navigation </h5>
+  <p>Tester Feedback
+  <ul>
+    <li>Users enjoyed how most pages in the
+      checkout process showed what ordered and thought check-out was fluid</li>
+    <li>Two users&nbsp;directly to look at the
+      cart cart instead of first looking at browse page</li>
+    <li>One user assumed<span>&nbsp;that by clicking &ldquo;submit&rdquo;
+        that they would be sent to would go to a final confirmation page before order being placed. Maybe rename
+        &lsquo;place order&rsquo;</li>
+    <li>Users were often confused about if an item was added to the
+      cart</li>
+    <li>Enjoyed shopping page but wanted a number in the cart and wanted a popup
+      stating that the website was successfully updated</li>
+  </ul>
+  Potential Interface Changes
+  <ul>
+    <li>Rename the &lsquo;submit&rsquo; button to &lsquo;place
+      order&rsquo; so the user is more aware of what pressing the button does.</li>
+    <li>Confirmation message appears at top of screen when item is added
+      to cart and cart has number of items displayed as icon.</li>
+    <li>Remove the navigation bar from the home page so that users know
+      that they are supposed to enter their zip code to enter rather than jump to other pages first.
+    </li>
+  </ul>
+  </p>
+  <h5>Hierarchy</h5>
+  <p>Tester Feedback
+  <ul>
+    <li>Confused about the keep/return functionality &nbsp;on the return page</li>
+    <li>Users wanted more ways to sort (e.g. by color) so that they could
+      find
+      the
+      blue sweater quicker.</li>
+    <li>Confused about how to select times on the shipping
+      confirmation
+      page but liked that she could pick when/what the item was and how they could get it</li>
+  </ul>
+  Potential Interface Changes
+  <ul>
+    <li>Make the buttons on the select time page look more similar to
+      other buttons on the website and have more affordances (e.g. darken when hovering) so that
+      people
+      know
+      they can push them.</li>
+    <li>Remove the keep button on the return page so that people
+      aren&rsquo;t confused by that functionality</li>
+    <li>Add filters.</li>
+  </ul>
+  </p>
+  <h5>Functionality</h5>
+  <p>Tester Feedback
+  <ul>
+    <li>Thought website was a base prototype for shopping companies
+      based on home page</li>
+    <li>Liked the front page but didn&rsquo;t like the word frictionless<span class="c1">&nbsp;&mdash;
+        liked
+        how
+        it
+        gave introduction to the website.</li>
+    <li>Wish it didn&rsquo;t make you select options in order on the
+      return page. Was easy once figured out.</li>
+  </ul>
+  Potential Interface Changes
+  <ul>
+    <li>Make the return page operate so you do not have to choose which
+      items to keep/return in sequential order</li>
+    <li>Make it more clear on the homepage what the purpose of the
+      start-up is.</li>
+  </ul>
+  </p>
 
-<!-- part 3 -->
-<h3>Part III - User Testing</h3>
-<h4>*subheading*</h4>
-<h4>*subheading*</h4>
-
-<h3>Conclusions & Takeaways</h3>
-<ul>
-</ul>
+  <h3>Conclusions & Takeaways</h3>
+  <ul>
+  </ul>
