@@ -26,6 +26,7 @@ text-decoration: underline;
 p {font-family: 'Courier New', Courier, monospace;}
 
 #image_box{
+    margin-bottom: 2%;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -48,6 +49,8 @@ p {font-family: 'Courier New', Courier, monospace;}
   padding: 15px;
 }
 
-.container {
+/* .container {
   width: 80%;
-}
+  display:flex;
+  justify-content: center;
+} */
