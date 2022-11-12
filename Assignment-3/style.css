@@ -33,7 +33,7 @@ p {font-family: 'Courier New', Courier, monospace;}
     padding: 2%;
 }
 
-#list{
+.list{
     font-family: 'Courier New', Courier, monospace;
     padding-left:15%;
     padding-right:15%;
