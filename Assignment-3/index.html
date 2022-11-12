@@ -21,8 +21,7 @@
     ourselves with iterative design by creating an interactive mockup based on an active startup idea.</p>
   <p>Ole is a shopping service that allows users to order online without worrying about whether clothes will fit or look
     good on them. Users input their zip code and view clothing items from various stores in the area. Thus, the clothes
-    are not limited by brand or store. A personal shopper picks up the items and delivers them at a specific time
-    (determined by the user at checkout). While the driver waits, the user can try on each clothing item and select
+    are not limited by brand or store. A personal shopper picks up the items and delivers them at a time that is determined by the user at checkout. While the driver waits, the user can try on each clothing item and select
     which ones to return or keep. The items they wish to return are given back to the driver, who completes the return
     process on the user’s behalf.</p>
   <p>Because of the delivery-based nature of the service, we decided to design for a desktop view. We imagine that most
@@ -34,6 +33,7 @@
   <h4>Sketches</h4>
 
   <!-- sample style: a group of 4 images -->
+  <p>We began the process by creating quick sketches of the core pages. The goal here was to explore a breadth of ideas.</p>
   <div id="image_box">
     <div class="grace-sketches">
       <p><b>Set #1:</b> Left: Sketches showing concepts for core pages: Home, Shopping, Location/Time Selection, and
@@ -52,18 +52,19 @@
     </div>
   </div>
   <div id="image_box">
-    <p><b>Set #3:</b> Sketches of each page & user's thoughts. Users of Ole typically want to shop new clothes but finds
+    <p><b>Set #3:</b> Sketches of each page & user's thoughts. Users of Ole typically want to shop for new clothes but find
       in-person shopping tiring.</p>
     <img src="source/Eileen_sketch.jpg" alt="image' - front" width=100%>
   </div>
   <div id="image_box">
-    <p><b>Set #4:</b> Sketches of potential shopping, return, and shipping confirmation pages.</p>
+    <p><b>Set #4:</b> Sketches of potential Shopping, Return, and Shipping Confirmation pages.</p>
     <img src="source/TOMMY-SKETCH-1.jpg" alt="image' - front" width=100%>
     <img src="source/TOMMY-SKETCH-2.jpg" alt="image' - front" width=100%>
     <img src="source/TOMMY-SKETCH-3.jpg" alt="image' - front" width=100%>
   </div>
 
   <h4>Wireframes</h4>
+  <p>After reviewing our sketches, we refined our ideas into lofi wireframes. Core design decisions and/or functionalities are noted beneath each wireframe.</p>
   <!-- 12 screens of lofi wireframes. Please replace the images! -->
   <div id="image_box">
     <div class="wireframe-box">
@@ -74,14 +75,13 @@
     </div>
     <div class="wireframe-box">
       <img src="source/Cart.JPG" alt="image' - back" width=100%>
-      <p>A page displaying all the items a user has added to their cart. Basic information about each item, as well as
-        the total price, is shown to the right.</p>
+      <p>A page displaying all the items a user has added to their cart. Basic information about each item (price, quantity, subtotal, size, and color) is displayed. A breakdown of the costs is shown to the right.</p>
     </div>
     <div class="wireframe-box">
       <img src="source/Checkout.JPG" alt="image' - front" width=100%>
       <p>A page that allows users to input their information for the order. The Order Summary box still appears to
         remind users of what is generally in their order. They can return to the Cart page if they need more details, or
-        would like to edit their order. In a fully built application, there would be a very similar page for billing
+        would like to edit their order. In a fully developed application, there would be a very similar page for billing
         information.</p>
     </div>
     <div class="wireframe-box">
@@ -101,7 +101,7 @@
       <p>If a user clicks on an outfit, they are shown an enlarged image of the outfit, alongside the items in the
         outfit. We debated having an "Add to Cart" button next to each item, but decided against it. To add an item to
         cart, one would have to provide a size, color, and quantity, as well as be aware of the price. This was more
-        information that we thought would be wise to display. We decided it would be best to separate this functionality
+        information than we thought would be wise to display. We decided it would be best to separate this functionality
         and simply allow the user to navigate to an item's page by clicking on the image of it.</p>
     </div>
     <div class="wireframe-box">
@@ -112,7 +112,7 @@
     </div>
     <div class="wireframe-box">
       <img src="source/Shipping Confirmation Page.png" alt="image' - back" width=100%>
-      <p>A page where people can choose what time they want their personal shopper to arrive with their items.</p>
+      <p>A page where people can choose what time they want their personal shopper to arrive with their items, as well as which shipping method they prefer. A map displays the address that the user previously inputted.</p>
     </div>
     <div class="wireframe-box">
       <img src="source/Item_Page.png" alt="image' - back" width=100%>
@@ -129,6 +129,7 @@
   <!-- part 2 -->
   <h3>Part II - Mockups</h3>
   <h4>Preview of Prototype</h4>
+  <p>Below is a preview of our hifi prototype, created based on our lofi wireframes and the feedback we received during a critique session with peers.</p>
   <div id="image_box">
     <img src="source/prototype.png" alt="image' - front" width=100%>
   </div>
@@ -143,7 +144,7 @@
           <li>Keep the rounding of boxes and images consistent.</li>
           <li>The navigation bar is not fully functional on all pages. Fixing this will help emulate the actual
             experience of using the site more accurately.</li>
-          <li>The navigation bar in particular is a bit "jumpy" bewteen pages.</li>
+          <li>The navigation bar in particular is a bit "jumpy" between pages.</li>
           <li>A wishlist page might be helpful as a way to store liked items.</li>
         </ul>
       </li>
@@ -213,6 +214,7 @@
 
   <!-- part 3 -->
   <h3>Part III - User Testing</h3>
+  <p>To iterate further, we had three professional user testers assess our prototype. The task that we provided and the accompanying feedback appear below.
   <h4>User testing tasks &amp; results</h4>
   <h5>Introduction</h5>
   <p>Imagine you are a shopper looking to use Ole to pick out a blue sweater for
@@ -267,23 +269,22 @@
   <p>Tester Feedback
   <ul>
     <li>Users enjoyed how most pages in the
-      checkout process showed what ordered and thought check-out was fluid</li>
-    <li>Two users&nbsp;directly to look at the
-      cart cart instead of first looking at browse page</li>
-    <li>One user assumed<span>&nbsp;that by clicking &ldquo;submit&rdquo;
-        that they would be sent to would go to a final confirmation page before order being placed. Maybe rename
-        &lsquo;place order&rsquo;</li>
-    <li>Users were often confused about if an item was added to the
-      cart</li>
-    <li>Enjoyed shopping page but wanted a number in the cart and wanted a popup
-      stating that the website was successfully updated</li>
+      checkout process showed what they ordered and thought checkout was fluid.</li>
+    <li>Two users navigated directly to the
+      Cart page instead of first looking at the Browse page.</li>
+    <li>One user assumed<span>&nbsp;that by clicking "Submit", they would be sent to a final confirmation page before their order was placed. Maybe rename
+        &lsquo;Place Order&rsquo;.</li>
+    <li>Users were often confused about whether an item was added to the
+      cart.</li>
+    <li>Enjoyed Shopping page but wanted a number next to the cart icon indicating how many items they had added and wanted a popup
+      stating that the website was successfully updated.</li>
   </ul>
   Potential Interface Changes
   <ul>
-    <li>Rename the &lsquo;submit&rsquo; button to &lsquo;place
-      order&rsquo; so the user is more aware of what pressing the button does.</li>
+    <li>Rename the &lsquo;Submit&rsquo; button to &lsquo;Place
+      Order&rsquo; so the user is more aware of what pressing the button does.</li>
     <li>Confirmation message appears at top of screen when item is added
-      to cart and cart has number of items displayed as icon.</li>
+      to cart and cart has number of items displayed as an icon.</li>
     <li>Remove the navigation bar from the home page so that users know
       that they are supposed to enter their zip code to enter rather than jump to other pages first.
     </li>
@@ -292,24 +293,24 @@
   <h5>Hierarchy</h5>
   <p>Tester Feedback
   <ul>
-    <li>Confused about the keep/return functionality &nbsp;on the return page</li>
+    <li>Confused about the keep/return functionality &nbsp;on the return page.</li>
     <li>Users wanted more ways to sort (e.g. by color) so that they could
       find
       the
       blue sweater quicker.</li>
-    <li>Confused about how to select times on the shipping
-      confirmation
-      page but liked that she could pick when/what the item was and how they could get it</li>
+    <li>Confused about how to select times on the Shipping
+      Confirmation
+      page but liked that they could pick when the item would be delivered.</li>
   </ul>
   Potential Interface Changes
   <ul>
-    <li>Make the buttons on the select time page look more similar to
+    <li>Make the buttons on the Shipping Confirmation page look more similar to
       other buttons on the website and have more affordances (e.g. darken when hovering) so that
       people
       know
       they can push them.</li>
     <li>Remove the keep button on the return page so that people
-      aren&rsquo;t confused by that functionality</li>
+      aren&rsquo;t confused by that functionality. Consider replacing the keep/return buttons with simple checkboxes.</li>
     <li>Add filters.</li>
   </ul>
   </p>
@@ -317,21 +318,21 @@
   <p>Tester Feedback
   <ul>
     <li>Thought website was a base prototype for shopping companies
-      based on home page</li>
+      based on home page.</li>
     <li>Liked the front page but didn&rsquo;t like the word frictionless<span class="c1">&nbsp;&mdash;
         liked
         how
         it
-        gave introduction to the website.</li>
-    <li>Wish it didn&rsquo;t make you select options in order on the
-      return page. Was easy once figured out.</li>
+        gave an introduction to the website.</li>
+    <li>Wish the page didn&rsquo;t make you select options in order on the
+      return page. The process was easy once that requirement was made clear.</li>
   </ul>
   Potential Interface Changes
   <ul>
-    <li>Make the return page operate so you do not have to choose which
-      items to keep/return in sequential order</li>
+    <li>Make the Return page operate so you do not have to choose which
+      items to keep/return in sequential order. (This was our intent, but we were unable to capture the full functionality in Figma.)</li>
     <li>Make it more clear on the homepage what the purpose of the
-      start-up is.</li>
+      startup is.</li>
   </ul>
   </p>
 
